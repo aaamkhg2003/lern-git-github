@@ -1,0 +1,21 @@
+gawish@gawish-Lenovo-B50-45:~/Desktop/lernen/github/lern-git-github$ ls
+git-github-reference.pdf  lern-git-github
+gawish@gawish-Lenovo-B50-45:~/Desktop/lernen/github/lern-git-github$ ls -la
+total 2244
+drwxrwxr-x 4 gawish gawish    4096 Nov 18 15:41 .
+drwxrwxr-x 3 gawish gawish    4096 Nov 18 15:41 ..
+drwxrwxr-x 8 gawish gawish    4096 Nov 18 15:41 .git
+-rw-rw-r-- 1 gawish gawish 2281316 Nov 18 15:41 git-github-reference.pdf
+drwxrwxr-x 2 gawish gawish    4096 Nov 18 15:46 lern-git-github
+gawish@gawish-Lenovo-B50-45:~/Desktop/lernen/github/lern-git-github$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+gawish@gawish-Lenovo-B50-45:~/Desktop/lernen/github/lern-git-github$ tauch testgit.txt
+Command 'tauch' not found, did you mean:
+  command 'touch' from deb coreutils (8.32-4.1ubuntu1.2)
+Try: sudo apt install <deb name>
+gawish@gawish-Lenovo-B50-45:~/Desktop/lernen/github/lern-git-github$ cat testgit.txt
+cat: testgit.txt: No such file or directory
+gawish@gawish-Lenovo-B50-45:~/Desktop/lernen/github/lern-git-github$ touch  testgit.txt
