@@ -19,3 +19,80 @@ Try: sudo apt install <deb name>
 gawish@gawish-Lenovo-B50-45:~/Desktop/lernen/github/lern-git-github$ cat testgit.txt
 cat: testgit.txt: No such file or directory
 gawish@gawish-Lenovo-B50-45:~/Desktop/lernen/github/lern-git-github$ touch  testgit.txt
+gawish@gawish-Lenovo-B50-45:~/Desktop/lernen/github/lern-git-github$ touch  testgit.txt
+gawish@gawish-Lenovo-B50-45:~/Desktop/lernen/github/lern-git-github$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        testgit.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+gawish@gawish-Lenovo-B50-45:~/Desktop/lernen/github/lern-git-github$ git add testgit.txt
+++++++++++++++++++++++++++++++++++++++++++++++++++
+gawish@gawish-Lenovo-B50-45:~/Desktop/lernen/github/lern-git-github$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   testgit.txt
+
+gawish@gawish-Lenovo-B50-45:~/Desktop/lernen/github/lern-git-github$ 
++++++++++++++++++++++++++++++++++++++++++
+gawish@gawish-Lenovo-B50-45:~/Desktop/lernen/github/lern-git-github$ git restore --stage testgit.t
+xt
+gawish@gawish-Lenovo-B50-45:~/Desktop/lernen/github/lern-git-github$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        testgit.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+gawish@gawish-Lenovo-B50-45:~/Desktop/lernen/github/lern-git-github$ 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+gawish@gawish-Lenovo-B50-45:~/Desktop/lernen/github/lern-git-github$ git add testgit.txt
+gawish@gawish-Lenovo-B50-45:~/Desktop/lernen/github/lern-git-github$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   testgit.txt
+++++++++++++++++++++++++++++++++++++++++++++++++++
+gawish@gawish-Lenovo-B50-45:~/Desktop/lernen/github/lern-git-github$ git commit -m "adding neu File"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'gawish@gawish-Lenovo-B50-45.(none)')
++++++++++++++++++++++++++++++++++++++++
+gawish@gawish-Lenovo-B50-45:~/Desktop/lernen/github/lern-git-github$ git config --global user.email "aaamkhg2003@gmail.com"
+gawish@gawish-Lenovo-B50-45:~/Desktop/lernen/github/lern-git-github$ git config --global user.name "aaamkhg2003"
++++++++++++++++++++++++++++
+gawish@gawish-Lenovo-B50-45:~/Desktop/lernen/github/lern-git-github$ git commit -m "adding neu File"
+[master 4c1dc65] adding neu File
+ 1 file changed, 21 insertions(+)
+ create mode 100644 testgit.txt
+gawish@gawish-Lenovo-B50-45:~/Desktop/lernen/github/lern-git-github$ 
++++++++++++++++++++++++++++++++++++
+gawish@gawish-Lenovo-B50-45:~/Desktop/lernen/github/lern-git-github$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+ nothing to commit, working tree clean
+++++++++++++++++++++++++++++
+ 
+
+
